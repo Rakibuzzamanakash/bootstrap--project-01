@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Oswald:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+:root{
+--pfont:'Open Sans', sans-serif;
+--hfont: 'Oswald', sans-serif;
+ --bcol:#e23e38;
+ --hcol:#353535;
+ --pcol:#777777;
+ --membg:#dddddd;
+ --bg1:#f1f1f1; 
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* ================
+   common css end 
+  ============== */
+  .navbar{
+      background: rgba(53, 53, 53, 0.25);
+      position: absolute;
+      top: 30px;
+      left: 0;
+      z-index: 99999;
+  } 
+  .navbar .navbar-brand{
+      background: var(--hcol);
+      padding: 10px 15px !important;
+      transform: skew(-30deg);
+  }
+  .navbar .navbar-brand  img{
+    transform: skew(30deg);
+  }
+  .navbar .navbar-nav .nav-item .nav-link{
+      line-height: 50px;
+      padding: 0 10px!important;
+      font-family: var(--hfont);
+      color: #fff;
+      font-weight: 400;
+      font-size: 14px;
+      position: relative;
+      z-index: 1;
+      transition: all linear .4s;
+  }
+  .navbar .navbar-nav .nav-item .nav-link:hover{
+      color: var(--hcol);
+  }
+  .navbar .navbar-nav .nav-item .nav-link::before{
+      content: "";
+      width: 100%;
+      height:  0%;
+      background: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -2;
+      transition: all linear .4s;
+  }
+  .navbar .navbar-nav .nav-item .nav-link:hover:before{
+    height:  100%;
+  }
+  .navbar .navbar-nav .nav-item .nav-link::after{
+    content: "";
+    width: 0%;
+    height:  3px;
+    background: var(--bcol);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: all linear .4s;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover::after{
+    width: 100%;
+}
+  .navbar .navbar-nav .nav-item:last-of-type .nav-link{
+      padding-right: 0 !important;
+  }
+/* ================
+   navbar css end 
+  ============== */
