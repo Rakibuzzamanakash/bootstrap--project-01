@@ -31,6 +31,7 @@ ul{
   .navbar{
       background: rgba(53, 53, 53, 0.25);
       position: absolute;
+      width: 100%;
       top: 30px;
       left: 0;
       z-index: 99999;
@@ -90,4 +91,19 @@ ul{
   }
 /* ================
    navbar css end 
+  ============== */
+  
+#banner .bg-1{
+    background:url(../images/gymnasium-banner-1.jpg) ;
+}
+
+#banner .bg-2{
+    background:url(../images/gymnasium-banner-2.jpg) ;
+}
+
+#banner .bg-3{
+    background:url(../images/gymnasium-banner-3.jpg) ;
+}
+/* ================
+   banner css end 
   ============== */
