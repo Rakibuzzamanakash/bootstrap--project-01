@@ -7,5 +7,9 @@ $(document).ready(function(){
       arrows:false,
       dots:true,
     });
-    
+
+    // about popup 
+    $('.venobox').venobox({
+        closeColor: 'var(--bcol)',
+    }); 
   });
