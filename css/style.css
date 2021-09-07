@@ -489,3 +489,94 @@ ul{
 /* ================
    gallery css end 
   ============== */
+ #membership{
+     margin-top: 75px;
+     margin-bottom: 75px;
+     
+ } 
+ .membership-item{
+    background: #f1f1f1;
+    margin-top: 25px;
+    
+ }
+ .membership-item .m-image{
+     position: relative;
+ }
+ .membership-item .m-image .m-overlay{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background: rgba(40, 31, 28, 0.8);
+     left: 0;
+     top: 0;
+     color: #fff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: var(--hfont);
+     font-weight: 500;
+     font-size: 50px;
+ }
+ .membership-item .m-image .m-overlay h3{
+    font-size: 50px;
+    padding-left: 20px;
+ }
+ .membership-item .m-image .m-overlay h3 span{
+    font-size: 29px;
+ }
+ .membership-item .m-text{
+     font-family: var(--pfont);
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 24px;
+     color: var(--pcol);
+ }
+ .membership-item .m-text p:first-of-type{
+     padding-top: 35px;
+ }
+ .membership-item .m-text p:last-of-type{
+     padding-bottom: 15px;
+ }
+ .membership-item .m-button{
+     font-family: var(--hfont);
+     font-size: 16px;
+     font-weight: 400;
+     background: #dddddd;
+     padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all linear .4s;
+ }
+ .membership-item .m-button a{
+    color: var(--hcol);
+    line-height: 24px;  
+    transition: all linear .4s; 
+ }
+ .membership-item:hover .m-button{
+    background: var(--bcol);
+ }
+ .membership-item:hover .m-button a{
+    color: #fff;
+ }
+ .membership-item .m-heading h4{
+     font-family: var(--hfont);
+     font-weight: 700;
+     font-size: 16px;
+     color: var(--hcol);
+     line-height: 24px;
+     padding-top: 15px;
+     padding-bottom: 15px;  
+     transition: all linear .4s; 
+ }
+ .membership-item .m-heading{
+    background: #dddddd;
+    transition: all linear .4s;
+ }
+ .membership-item:hover .m-heading{
+     background: var(--bcol);    
+ }
+ .membership-item:hover .m-heading h4{
+    color: #fff;
+ }
+/* ===================
+   membership css end 
+  ================= */
